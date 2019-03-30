@@ -28,17 +28,16 @@
         android:paddingVertical="14dp"/>
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/loginType"
         android:layout_width="154dp"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="LOGIN AS A REQUESTER"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="11dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -141,7 +140,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="8dp"
-        android:background="#FF0000"
+        android:background="@color/colorPrimaryDark"
         android:text="LOGIN"
         android:textColor="#FFF"
         android:translationZ="10dp"
@@ -162,7 +161,7 @@
         android:layout_marginBottom="8dp"
         android:text="Forgot Password?"
         android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,5 +186,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.941"
         android:translationZ="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/ColorSecondary" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
