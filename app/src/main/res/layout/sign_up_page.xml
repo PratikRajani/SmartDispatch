@@ -8,7 +8,7 @@
     android:background="#EEE">
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/registerTextView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
@@ -27,7 +27,7 @@
         android:paddingVertical="14dp"/>
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:orientation="vertical"
@@ -42,7 +42,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -63,7 +63,7 @@
                 app:layout_constraintVertical_bias="0.084" />
 
             <EditText
-                android:id="@+id/editText13"
+                android:id="@+id/age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -84,7 +84,7 @@
                 app:layout_constraintVertical_bias="0.173" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/sex"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
@@ -92,7 +92,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="15dp"
                 android:text="Sex"
-                android:textColor="#FF0000"
+                android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +101,7 @@
                 app:layout_constraintVertical_bias="0.264" />
 
             <View
-                android:id="@+id/divider5"
+                android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#FFABAB"
@@ -109,7 +109,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/sex"
                 app:layout_constraintVertical_bias="0.326" />
 
             <RadioGroup
@@ -170,7 +170,7 @@
                 app:layout_constraintVertical_bias="0.538" />
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/aadhaarno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -179,6 +179,27 @@
                 android:layout_marginBottom="8dp"
                 android:ems="10"
                 android:hint="Aadhaar Number"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:textColor="#FF6969"
+                android:textColorHint="#FF9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.625" />
+
+            <EditText
+                android:id="@+id/licenceno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="Licence Number"
                 android:inputType="number"
                 android:textSize="15dp"
                 android:textColor="#FF6969"
@@ -257,7 +278,7 @@
 
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
