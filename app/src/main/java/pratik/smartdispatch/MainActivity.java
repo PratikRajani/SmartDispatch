@@ -3,7 +3,6 @@ package pratik.smartdispatch;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,51 +26,45 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                openLogIn();
+                openLogIn("Requester Login");
             }
         });
 
         vehicleloginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openVehicleLogIn();
+                openLogIn("Vehicle Login");
             }
         });
 
         hospitalloginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openHospitalLogIn();
+                openLogIn("Hospital Login");
             }
         });
 
         adminloginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openLogIn();
+                openLogIn("Admin Login");
             }
         });
     }
 
-    public void openSignUp(){
+    public void openSignUp(String userType){
         Intent intent = new Intent(this, SignUp.class);
+        intent.putExtra("userType", userType);
         startActivity(intent);
     }
 
-    public void openLogIn(){
+    public void openLogIn(String user_login){
+
         Intent intent = new Intent(this, LogIn.class);
-        startActivity(intent);
-    }
-
-    public void openHospitalLogIn(){
-        Intent intent = new Intent(this, HospitalLogin.class);
-        startActivity(intent);
-    }
-
-    public void openVehicleLogIn(){
-        Intent intent = new Intent(this, VehicleLogin.class);
+        intent.putExtra("loginType", user_login);
         startActivity(intent);
     }
 }
+
 
 

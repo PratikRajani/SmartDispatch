@@ -75,27 +75,7 @@ public class RecyclerView extends MainActivity {
                         "GJ1 RP 4523"
                 )
         );
-        requestList.add(
-                new Request(
-                        "Pratik Rajani",
-                        "20",
-                        "Male",
-                        "RaviKumar Tiwari",
-                        "9534520125",
-                        "GJ5 AJ 5463"
-                )
-        );
 
-        requestList.add(
-                new Request(
-                        "Manish K Gupta",
-                        "40",
-                        "Male",
-                        "RutuBen Parekh",
-                        "1202154532",
-                        "GJ1 RP 4523"
-                )
-        );
 
 
 
