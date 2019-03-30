@@ -28,10 +28,20 @@
         <activity android:name=".RecyclerView">
 
         </activity>
-        <activity android:name=".HospitalLogin">
+        <activity android:name=".UserMapactivity">
 
         </activity>
-        <activity android:name=".VehicleLogin">
+        <activity android:name=".AdminMainactivity">
+
+        </activity>
+        <activity android:name=".CurrentReqRV" />
+        <activity android:name=".HistoryReqRV">
+
+        </activity>
+        <activity android:name=".VehicleMainactivity">
+
+        </activity>
+        <activity android:name=".SOSRecyclerView">
 
         </activity>
     </application>
