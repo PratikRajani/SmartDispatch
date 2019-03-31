@@ -39,7 +39,7 @@ public class SignUp extends MainActivity  {
 
         if (userType.equals("Vehicle")){
 
-            registerTexView.setText("REGISTER VEHICLE");
+            registerTexView.setText("Register Vehicle");
             name.setHint("Driver Name");
             age.setHint("Driver Age");
             sex.setText("Driver Sex");
@@ -49,7 +49,7 @@ public class SignUp extends MainActivity  {
         }
         else if (userType.equals("Hospital")){
 
-            registerTexView.setText("REGISTER HOSPITAL");
+            registerTexView.setText("Register Hospital");
             name.setHint("Hospital Name");
             name.setInputType(InputType.TYPE_CLASS_TEXT);
             age.setHint("Hospital Address");
