@@ -33,24 +33,17 @@
         android:orientation="horizontal"
         android:translationZ="10dp">
 
-        <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:drawableLeft="@drawable/ic_menu_black_24dp"
-            android:layout_marginLeft="15dp"
-            android:drawableTint="@color/colorPrimaryDark"/>-->
-
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:fontFamily="serif"
             android:paddingTop="13dp"
             android:text="Smart Dispatch"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="17dp"/>
+            android:textSize="17dp"
+            android:textAlignment="center"/>
     </LinearLayout>
 
     <ScrollView
@@ -255,36 +248,14 @@
             android:translationZ="5dp"/>
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText19"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPostalAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816"
-        android:background="#FEFEFE"
-        android:translationZ="2dp"
-        android:padding="15dp"
-        android:textColorHint="#FEABAB"
-        android:textColor="#FE6969"
-        android:fontFamily="serif"
-        android:textSize="15dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"/>
+
 
     <Button
         android:id="@+id/sentrequestButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="12dp"
         android:background="@color/colorPrimaryDark"
