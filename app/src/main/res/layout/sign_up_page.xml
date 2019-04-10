@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEE">
 
     <TextView
-        android:id="@+id/registerTextView"
+        android:id="@+id/textEmailReg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
         android:text="Register"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="17dp"
         android:background="#FFF"
         android:fontFamily="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         android:translationZ="5dp"
         android:paddingVertical="14dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="70dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        android:paddingBottom="20dp"
+        android:layout_below="@id/textEmailReg">
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/input_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -54,16 +45,10 @@
                 android:inputType="textPersonName"
                 android:textSize="15dp"
                 android:textColor="#FF6969"
-                android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.084" />
+                android:textColorHint="#FF9999" />
 
             <EditText
-                android:id="@+id/age"
+                android:id="@+id/input_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -76,15 +61,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.173" />
+                android:layout_below="@id/input_name"/>
 
             <TextView
-                android:id="@+id/sex"
+                android:id="@+id/input_sex"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
@@ -93,24 +73,14 @@
                 android:paddingTop="15dp"
                 android:text="Sex"
                 android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.264" />
+                android:layout_below="@id/input_age"/>
 
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#FFABAB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/sex"
-                app:layout_constraintVertical_bias="0.326" />
+                android:layout_below="@id/input_sex"/>
 
             <RadioGroup
                 android:id="@+id/radioGroup"
@@ -121,12 +91,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="13dp"
                 android:paddingBottom="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.395">
+                android:layout_below="@id/divider">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -149,7 +114,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/input_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -162,15 +127,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.538" />
+                android:layout_below="@id/radioGroup"/>
 
             <EditText
-                android:id="@+id/aadhaarno"
+                android:id="@+id/input_aadhar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -183,15 +143,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.625" />
+                android:layout_below="@id/input_phone"/>
 
             <EditText
-                android:id="@+id/licenceno"
+                android:id="@+id/input_licenceno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -204,15 +159,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.625" />
+                android:layout_below="@id/input_aadhar" />
 
             <EditText
-                android:id="@+id/editText16"
+                android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -225,15 +175,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.713" />
+                android:layout_below="@id/input_licenceno"/>
 
             <EditText
-                android:id="@+id/editText17"
+                android:id="@+id/input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -246,15 +191,10 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.801" />
+                android:layout_below="@id/input_email"/>
 
             <EditText
-                android:id="@+id/editText18"
+                android:id="@+id/input_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -267,12 +207,7 @@
                 android:textSize="15dp"
                 android:textColor="#FF6969"
                 android:textColorHint="#FF9999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.889" />
+                android:layout_below="@id/input_password"/>
 
 
 
@@ -288,15 +223,10 @@
             android:background="@color/colorPrimaryDark"
             android:text="REGISTER"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.465"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.988"
-            android:translationZ="10dp"/>
+            android:translationZ="10dp"
+            android:layout_below="@id/input_confirm_password"/>
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
