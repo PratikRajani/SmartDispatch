@@ -19,7 +19,7 @@
         android:translationZ="5dp"
         android:paddingVertical="14dp"
         android:background="#FFF"
-        android:fontFamily="serif" />
+        android:fontFamily="sans-serif" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -43,7 +43,8 @@
         android:padding="10dp"
         android:text="LogIn as a requester"
         android:textColor="#FFF"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif"/>
 
     <Button
         android:id="@+id/vehicle_login_button"
@@ -54,10 +55,11 @@
         android:layout_marginBottom="25dp"
         android:background="@drawable/textviewborder"
         android:padding="10dp"
-        android:text="log in as a vehicle"
+        android:text="login as a vehicle"
         android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/user_login_button"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif"/>
 
     <Button
         android:id="@+id/hospital_login_button"
@@ -71,7 +73,8 @@
         android:text="login as a hospital"
         android:textColor="#FFF"
         android:layout_below="@id/vehicle_login_button"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif"/>
 
 
 
@@ -86,7 +89,8 @@
         android:text="Login as a admin"
         android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/hospital_login_button"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif"/>
     </RelativeLayout>
     </ScrollView>
 

@@ -19,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="serif"
             android:paddingTop="13dp"
             android:text="Smart Dispatch"
             android:textColor="@color/colorPrimaryDark"
@@ -71,7 +70,6 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="13dp"
                         android:layout_weight="1"
-                        android:fontFamily="serif"
                         android:text="Logs"
                         android:textColor="#FFF"
                         android:textSize="14dp"
@@ -100,7 +98,8 @@
                         android:background="@drawable/border_button"
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_gravity="start"/>
+                        android:layout_gravity="start"
+                        android:fontFamily="sans-serif"/>
 
                     <Button
                         android:id="@+id/rh_textView"
@@ -113,7 +112,8 @@
                         android:background="@drawable/border_button"
                         android:layout_gravity="end"
                         android:layout_marginBottom="10dp"
-                        android:layout_below="@id/cr_textView"/>
+                        android:layout_below="@id/cr_textView"
+                        android:fontFamily="sans-serif"/>
 
                     <Button
                         android:id="@+id/sosButton"
@@ -125,7 +125,8 @@
                         android:padding="10dp"
                         android:background="@color/ColorSecondary"
                         android:layout_gravity="end"
-                        android:layout_below="@+id/rh_textView"/>
+                        android:layout_below="@+id/rh_textView"
+                        android:fontFamily="sans-serif"/>
 
                 </RelativeLayout>
                 </RelativeLayout>
@@ -167,7 +168,6 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="13dp"
                         android:layout_weight="1"
-                        android:fontFamily="serif"
                         android:text="Register"
                         android:textColor="#FFF"
                         android:textSize="14dp"
@@ -195,7 +195,8 @@
                         android:padding="10dp"
                         android:background="@drawable/border_button"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif"/>
 
                     <Button
                         android:id="@+id/rhos_textView"
@@ -206,7 +207,8 @@
                         android:textAlignment="center"
                         android:padding="10dp"
                         android:background="@drawable/border_button"
-                        android:layout_below="@+id/rv_textView"/>
+                        android:layout_below="@+id/rv_textView"
+                        android:fontFamily="sans-serif"/>
 
                 </RelativeLayout>
 

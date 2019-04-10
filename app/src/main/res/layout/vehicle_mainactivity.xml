@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="serif"
+            android:fontFamily="sans-serif"
             android:paddingTop="13dp"
             android:text="Smart Dispatch"
             android:textColor="@color/colorPrimaryDark"
@@ -63,7 +63,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Vehicle Details"
                 android:textColor="#FFF"
                 android:textSize="14dp"
@@ -87,7 +87,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
-                android:background="#F0CFCF"
                 android:orientation="horizontal"
                 android:padding="15dp">
 
@@ -105,7 +104,8 @@
                     android:paddingHorizontal="10dp"
                     android:text="RaviKumar Tiwari"
                     android:textSize="15dp"
-                    android:layout_toRightOf="@id/drivername"/>
+                    android:layout_toRightOf="@id/drivername"
+                    android:textColor="@color/ColorSecondary"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -113,7 +113,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
-                android:background="#F0CFCF"
                 android:orientation="horizontal"
                 android:padding="15dp"
                 android:layout_below="@id/nameLayout">
@@ -132,7 +131,8 @@
                     android:paddingHorizontal="10dp"
                     android:text="5863523652"
                     android:textSize="15dp"
-                    android:layout_toRightOf="@id/contactno"/>
+                    android:layout_toRightOf="@id/contactno"
+                    android:textColor="@color/ColorSecondary"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -140,7 +140,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
-                android:background="#F0CFCF"
                 android:orientation="horizontal"
                 android:padding="15dp"
                 android:layout_below="@id/contactLayout">
@@ -159,14 +158,14 @@
                     android:paddingHorizontal="10dp"
                     android:text="GJ5 AJ 5465"
                     android:textSize="15dp"
-                    android:layout_toRightOf="@id/vehicleNo"/>
+                    android:layout_toRightOf="@id/vehicleNo"
+                    android:textColor="@color/ColorSecondary"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
-                android:background="#F0CFCF"
                 android:orientation="horizontal"
                 android:padding="15dp"
                 android:layout_below="@id/vehicleNoLayout">
@@ -185,7 +184,8 @@
                     android:paddingHorizontal="10dp"
                     android:text="123456"
                     android:textSize="15dp"
-                    android:layout_toRightOf="@id/licenceNo"/>
+                    android:layout_toRightOf="@id/licenceNo"
+                    android:textColor="@color/ColorSecondary"/>
             </RelativeLayout>
 
         </RelativeLayout>

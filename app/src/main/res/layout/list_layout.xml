@@ -35,7 +35,6 @@
                 android:textAlignment="center"
                 android:padding="10dp"
                 android:textSize="14dp"
-                android:fontFamily="serif"
                 android:textColor="#FFF"
                 android:background="@color/colorPrimaryDark"/>
 
@@ -59,7 +58,7 @@
                     android:id="@+id/drivername"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="#EEE"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
             </LinearLayout>
@@ -84,7 +83,7 @@
                     android:id="@+id/contactno"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="#EEE"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
             </LinearLayout>
@@ -110,7 +109,7 @@
                     android:id="@+id/vehicleno"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="#EEE"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
             </LinearLayout>
@@ -129,7 +128,7 @@
                 android:textAlignment="center"
                 android:padding="10dp"
                 android:textSize="14dp"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:textColor="@color/colorPrimaryDark"
                 android:translationZ="5dp"/>
 
@@ -153,7 +152,7 @@
                     android:id="@+id/usrname"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="@color/ColorSecondary"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
             </LinearLayout>
@@ -178,7 +177,7 @@
                     android:id="@+id/usrage"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="@color/ColorSecondary"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
                 <TextView
@@ -194,7 +193,7 @@
                     android:id="@+id/usrsex"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="@color/ColorSecondary"
+                    android:textColor="@color/colorPrimaryLight"
                     android:textSize="12dp"/>
 
             </LinearLayout>
@@ -205,12 +204,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="10dp"
-                    android:background="#333B83"
+                    android:background="@color/ColorSecondary"
                     android:text="end request"
                     android:textColor="#FFF"
                     android:textSize="13dp"
                     android:paddingHorizontal="10dp"
-                    android:layout_gravity="end" />
+                    android:layout_gravity="end"
+                    android:fontFamily="sans-serif"/>
             </LinearLayout>
 
         </LinearLayout>

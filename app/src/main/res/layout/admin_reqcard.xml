@@ -35,7 +35,6 @@
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="14dp"
-                    android:fontFamily="serif"
                     android:textColor="#FFF"
                     android:background="@color/colorPrimaryDark"/>
 
@@ -59,7 +58,7 @@
                         android:id="@+id/hospitalname"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="#EEE"
+                        android:textColor="@color/colorPrimaryLight"
                         android:textSize="12dp"/>
 
                 </LinearLayout>
@@ -84,36 +83,11 @@
                         android:id="@+id/hospitaladdr"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="#EEE"
+                        android:textColor="@color/colorPrimaryLight"
                         android:textSize="12dp"/>
 
                 </LinearLayout>
 
-               <!-- <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:textAlignment="center"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:paddingHorizontal="10dp">
-
-                    <TextView
-                        android:id="@+id/vehiclenoTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Vehicle No. : "
-                        android:textColor="#EEE"
-                        android:textSize="12dp"/>
-
-                    <TextView
-                        android:id="@+id/vehicleno"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textColor="#EEE"
-                        android:textSize="12dp"/>
-
-                </LinearLayout>-->
             </LinearLayout>
 
             <LinearLayout
@@ -129,7 +103,6 @@
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="14dp"
-                    android:fontFamily="serif"
                     android:textColor="@color/colorPrimaryDark"
                     android:translationZ="5dp"/>
 
@@ -146,14 +119,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Driver Name : "
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/ColorSecondary"
                         android:textSize="12dp"/>
 
                     <TextView
                         android:id="@+id/drivername"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/colorPrimaryLight"
                         android:textSize="12dp"/>
 
                 </LinearLayout>
@@ -171,14 +144,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Contact No. : "
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/ColorSecondary"
                         android:textSize="12dp"/>
 
                     <TextView
                         android:id="@+id/contactno"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/colorPrimaryLight"
                         android:textSize="12dp"/>
 
                 </LinearLayout>
@@ -197,14 +170,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Vehicle No. : "
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/ColorSecondary"
                         android:textSize="12dp"/>
 
                     <TextView
                         android:id="@+id/vehicleno"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="#F04C4C"
+                        android:textColor="@color/colorPrimaryLight"
                         android:textSize="12dp"/>
 
                 </LinearLayout>

@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="serif"
+            android:fontFamily="sans-serif"
             android:paddingTop="13dp"
             android:text="Smart Dispatch"
             android:textAlignment="center"
@@ -59,7 +59,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Type Of Emergency"
                 android:textColor="#FFF"
                 android:textSize="14dp"
@@ -143,7 +143,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Severity"
                 android:textColor="#FFF"
                 android:textSize="14dp"
@@ -162,8 +162,6 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:progress="1"
-            android:thumbTint="@color/ColorSecondary"
-            android:tickMarkTint="@color/colorPrimaryDark"
             android:layout_below="@+id/severityHeading"/>
 
         <TextView
@@ -176,9 +174,10 @@
             android:paddingRight="20dp"
             android:paddingBottom="10dp"
             android:text="Description"
-            android:textColor="#FF6969"
+            android:textColor="@color/ColorSecondary"
             android:translationZ="5dp"
-            android:layout_below="@+id/seekBar"/>
+            android:layout_below="@+id/seekBar"
+            android:fontFamily="sans-serif"/>
     </RelativeLayout>
 
 
@@ -194,7 +193,8 @@
         android:background="@color/colorPrimaryDark"
         android:text="Sent Request"
         android:textColor="#FFF"
-        android:layout_below="@+id/severityLayout"/>
+        android:layout_below="@+id/severityLayout"
+        android:fontFamily="sans-serif"/>
 
         </RelativeLayout>
     </ScrollView>
